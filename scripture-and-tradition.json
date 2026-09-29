@@ -1,0 +1,60 @@
+{
+  "id": "scripture-and-tradition",
+  "title": "Scripture and the Living Tradition",
+  "author": {
+    "id": "john-meyendorff",
+    "name": "John Meyendorff",
+    "bio": "Patristic scholar and historian of Byzantine Christianity.",
+    "era": "20th Century"
+  },
+  "type": "Essay",
+  "category": "Scripture",
+  "shortDescription": "How the Church Fathers read the Scriptures: not as an isolated dead text, but within the Eucharistic life of the Holy Spirit.",
+  "publicationInfo": "Living Tradition: Orthodox Witness in the Contemporary World, SVS Press.",
+  "sourceUrl": "https://storage.googleapis.com/papers-theology-archive/scripture_and_tradition.pdf",
+  "estimatedReadingMinutes": 18,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "The Canon and the Community",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "The Church Preceding the Written Canon",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The holy Scriptures did not fall from heaven as a bound volume; they were born from the living witness of the apostolic communities under the inspiration of Pentecost."
+            },
+            {
+              "type": "paragraph",
+              "text": "To separate the written text of Scripture from the ecclesial matrix in which it was recognized, codified, and proclaimed is to reduce a living revelation into a historical fossil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "The Spiritual Hermeneutic of the Fathers",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Christ as the Scope of All Scripture",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "From Origen to Chrysostom, the Fathers read both Testaments with Christ as their single, unifying horizon. Every psalm, prophecy, and patriarchal history pointed toward the Incarnation."
+            },
+            {
+              "type": "paragraph",
+              "text": "Literal interpretation served as the solid foundation, but spiritual contemplation (theoria) elevated the soul from the letter to the life-giving Spirit."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

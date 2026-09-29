@@ -1,0 +1,60 @@
+{
+  "id": "hesychasm-contemplation",
+  "title": "Hesychasm and the Inner Kingdom",
+  "author": {
+    "id": "kallistos-ware",
+    "name": "Metropolitan Kallistos Ware",
+    "bio": "Oxford theologian and leading voice on the Philokalia and Christian asceticism.",
+    "era": "20th/21st Century"
+  },
+  "type": "Lecture",
+  "category": "Christian Life",
+  "shortDescription": "The practice of silence, watchfulness (nepsis), and the Jesus Prayer as an inward pathway to divine communion.",
+  "publicationInfo": "Delivered as the Fr. Georges Florovsky Lecture, Princeton, 1996.",
+  "sourceUrl": "https://storage.googleapis.com/papers-theology-archive/hesychasm_inner_kingdom.pdf",
+  "estimatedReadingMinutes": 22,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "The Meaning of Hesychia",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "Silence as an Active Presence",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Hesychia is commonly translated as 'silence' or 'stillness,' but it is not a mere absence of noise or cessation of speech. In the vocabulary of the desert elders, hesychia signifies an intensely focused, recollected listening to the presence of God."
+            },
+            {
+              "type": "blockquote",
+              "text": "“The hesychast is one who seeks to circumscribe the incorporeal within his bodily dwelling, striving to shut the doors of his senses so that the intellect may gaze upon God alone.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "The Prayer of the Heart",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Descent of the Mind into the Heart",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The repetitive invocation of the Name of Jesus—'Lord Jesus Christ, Son of God, have mercy on me'—is designed to integrate the whole human person. It begins upon the lips, passes into the intellect, and ultimately descends into the spiritual heart."
+            },
+            {
+              "type": "paragraph",
+              "text": "When prayer becomes self-acting, the Christian no longer merely performs prayers; their entire being becomes a prayer offering unceasing thanksgiving."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

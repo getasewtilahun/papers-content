@@ -1,0 +1,56 @@
+{
+  "id": "patristic-doctrine-creation",
+  "title": "Creatio Ex Nihilo and Cosmic Order",
+  "author": {
+    "id": "jaroslav-pelikan",
+    "name": "Jaroslav Pelikan",
+    "bio": "Sterling Professor of History at Yale University and master of Christian tradition.",
+    "era": "20th Century"
+  },
+  "type": "Study",
+  "category": "Research",
+  "shortDescription": "A critical historical investigation into how 2nd-century apologetic theology established the absolute ontological freedom of God.",
+  "publicationInfo": "The Christian Tradition: A History of the Development of Doctrine, Vol. 1, Univ. of Chicago Press.",
+  "sourceUrl": "https://storage.googleapis.com/papers-theology-archive/creatio_ex_nihilo.pdf",
+  "estimatedReadingMinutes": 35,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "The Philosophical Crucible",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "Hellenistic Cosmology vs. Genesis",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For classical Greek metaphysics from Plato's Timaeus to Aristotle's Metaphysics, the idea that the universe could originate out of absolute nothingness was intellectually unthinkable. Matter was either eternal or an unformed substratum awaiting the Demiurge's ordering hand."
+            },
+            {
+              "type": "paragraph",
+              "text": "When early Christian apologists like Theophilus of Antioch and Tertullian articulated 'creatio ex nihilo,' they were not uttering a pious platitude; they were dismantling pagan cosmic dualism and confessing that creation is a free act of sovereign divine love."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "The Goodness of the Material Creation",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Overcoming Gnostic Nihilism",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Because God created all things out of nothing by His own Word, matter is not intrinsically corrupt or evil. The material cosmos is inherently good, capable of receiving divine grace and being transfigured in the resurrection."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "early-church-fathers",
+  "title": "The Early Fathers on Unity",
+  "author": {
+    "id": "georges-florovsky",
+    "name": "Georges Florovsky",
+    "bio": "Pioneering theologian of the Neopatristic synthesis.",
+    "era": "20th Century"
+  },
+  "type": "Paper",
+  "category": "Church History",
+  "shortDescription": "An examination of the apostolic ecclesiology of St. Ignatius of Antioch and St. Irenaeus of Lyons amidst early schisms.",
+  "publicationInfo": "Collected Works of Georges Florovsky, Vol. 3, Nordland Publishing.",
+  "sourceUrl": "https://storage.googleapis.com/papers-theology-archive/early_fathers_unity.pdf",
+  "estimatedReadingMinutes": 30,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "The Ignatian Vision of the Local Church",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "The Bishop and the Council of Presbyters",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For Saint Ignatius of Antioch, marching toward his martyrdom in the Colosseum of Rome, unity was neither an administrative strategy nor a juridical obligation; it was the charismatic reflection of the Holy Trinity within the local assembly."
+            },
+            {
+              "type": "blockquote",
+              "text": "“Wherever the bishop shall appear, there let the multitude also be; even as, wherever Jesus Christ is, there is the Catholic Church.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "The bishop stands in the place of God, surrounded by the presbyters as an apostolic council, with the deacons ministering the service of Jesus Christ. Where this Eucharistic harmony exists, schism is made powerless."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "Irenaeus and the Rule of Faith",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Apostolic Succession as Guardian of Truth",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Faced with Gnostic esoteric speculations claiming secret oral traditions, Saint Irenaeus of Lyons anchored ecclesiastical truth in the public succession of apostolic teachers and the universal Rule of Faith."
+            },
+            {
+              "type": "paragraph",
+              "text": "The Church throughout the entire inhabited cosmos, though dispersed among diverse nations and tongues, preserves this proclamation with one heart and one mouth, as though inhabiting a single dwelling."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

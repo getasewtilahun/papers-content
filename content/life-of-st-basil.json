@@ -1,0 +1,154 @@
+{
+  "id": "life-of-st-basil",
+  "title": "The Life of St. Basil the Great",
+  "author": {
+    "id": "gregory-of-nyssa",
+    "name": "St. Gregory of Nyssa",
+    "bio": "One of the Cappadocian Fathers and brother of St. Basil.",
+    "era": "4th Century"
+  },
+  "type": "Book",
+  "category": "Patristics",
+  "shortDescription": "An intimate encomium and theological biography honoring the monastic wisdom, pastoral heroism, and doctrinal steadfastness of St. Basil.",
+  "publicationInfo": "Patrologia Graeca, Vol. 46, trans. W. Moore, Oxford.",
+  "sourceUrl": "https://storage.googleapis.com/papers-theology-archive/life_of_st_basil.pdf",
+  "estimatedReadingMinutes": 45,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "Early Life and Youth in Athens",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "Ancestry and Pious Education",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "It is customary among those who praise mortal men to dwell at length upon nobility of birth, ancestral estates, and the honors accumulated through public magistracies. But for our holy father Basil, we measure true nobility solely by kinship with God and constancy in virtue."
+            },
+            {
+              "type": "paragraph",
+              "text": "Born in Caesarea of Cappadocia to parents distinguished both for rhetorical eloquence and unyielding faith under persecutions, Basil was nurtured from his tenderest infancy upon the holy oracles of the Scriptures under the guidance of his grandmother Macrina."
+            },
+            {
+              "type": "footnote",
+              "noteId": "1",
+              "text": "St. Gregory of Nyssa, De Vita Macrinae, PG 46: 960; cf. Basil, Ep. 204.6."
+            }
+          ]
+        },
+        {
+          "id": "sec-1-2",
+          "title": "The Schools of Athens and Friendship with Gregory",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Sent to Athens to acquire mastery over Greek rhetoric, philosophy, and geometry, he met there Gregory of Nazianzus. Their companionship became a marvel to the university city: they knew but two paths—one leading to the church, and the other to the lecture halls."
+            },
+            {
+              "type": "footnote",
+              "noteId": "2",
+              "text": "Gregory of Nazianzus, Oratio 43.19–20 (Funeral Oration on St. Basil)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "The Solitude of Pontus and the Asketikon",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Renunciation and Wilderness",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Having surveyed the empty vanity of worldly acclaim, Basil divested himself of all ancestral possessions, distributing them to the poor and indigent, and withdrew into the wild gorges of Pontus near the river Iris."
+            },
+            {
+              "type": "paragraph",
+              "text": "There, amidst precipitous crags and dense forests, he fashioned the rules of cenobitic monasticism—balancing contemplative prayer with manual labor, silence with fraternal charity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-3",
+      "number": 3,
+      "title": "Bishop of Caesarea and Champion of Orthodoxy",
+      "sections": [
+        {
+          "id": "sec-3-1",
+          "title": "Elevation to the Archiepiscopal Throne",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When the see of Caesarea became vacant, the eyes of all Orthodox bishops turned toward the solitude of Pontus. Reluctantly yielding to the urgent supplications of the Church, Basil took upon his shoulders the burden of the archiepiscopal throne."
+            },
+            {
+              "type": "paragraph",
+              "text": "A severe famine struck Cappadocia shortly after his consecration. Basil immediately threw open the storehouses, convinced the wealthy to release their hoarded grain, and personally donned an apron to wash the feet of the starving and ladle soup into their bowls."
+            },
+            {
+              "type": "paragraph",
+              "text": "Beyond the gates of Caesarea he established the 'Basiliad'—a veritable city of compassion containing hospitals, leper houses, traveler lodgings, and artisan workshops, where suffering humanity was treated with royal dignity."
+            }
+          ]
+        },
+        {
+          "id": "sec-3-2",
+          "title": "The Confrontation with the Prefect Modestus",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The Arian Emperor Valens, seeking to coerce the entire East into heretical conformity, dispatched his fearsome prefect Modestus to Caesarea. When Modestus threatened Basil with confiscation of goods, exile, torture, and death, the bishop stood unmoved."
+            },
+            {
+              "type": "blockquote",
+              "text": "“Confiscation of goods cannot harm one who owns nothing but a worn cloak and a few books. Exile I do not know, for the whole earth belongs to God. Death is a benefactor to me, for it will send me sooner to Him for whom I live.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "Astonished by such unshakeable serenity, Modestus confessed to the Emperor: 'We have been vanquished by the bishop of this city; he is superior to all our threats.'"
+            },
+            {
+              "type": "footnote",
+              "noteId": "3",
+              "text": "Theodoret, Historia Ecclesiastica IV.19; cf. Socrates Scholasticus, H.E. IV.26."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-4",
+      "number": 4,
+      "title": "The Treatise on the Holy Spirit and Peaceful Repose",
+      "sections": [
+        {
+          "id": "sec-4-1",
+          "title": "Defending the Divine Paraclete",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "In his final years, frail in body yet burning with apostolic fire, Basil composed his landmark treatise 'On the Holy Spirit,' demonstrating with luminous clarity that the Third Person of the Trinity is co-equal in honor and glory with the Father and the Son."
+            },
+            {
+              "type": "footnote",
+              "noteId": "4",
+              "text": "Basil of Caesarea, De Spiritu Sancto, PG 32: 67–218; written c. 375 AD."
+            },
+            {
+              "type": "paragraph",
+              "text": "On the first day of January in the year 379, surrounded by weeping citizens and brethren, he surrendered his soul into the hands of the Living God with the words: 'Into Thy hands, Lord, I commend my spirit.'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

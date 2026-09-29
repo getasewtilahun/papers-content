@@ -1,0 +1,98 @@
+[
+  {
+    "id": "nature-of-christian-worship",
+    "title": "The Nature of Christian Worship",
+    "author": {
+      "id": "alexander-schmemann",
+      "name": "Alexander Schmemann",
+      "bio": "Renowned 20th-century Orthodox theologian and Dean of St. Vladimir's Seminary.",
+      "era": "20th Century"
+    },
+    "type": "Study",
+    "category": "Theology",
+    "shortDescription": "A profound contemplation on liturgical assembly, eschatological reality, and the transformative purpose of Christian liturgy.",
+    "publicationInfo": "Originally published in St. Vladimir's Theological Quarterly, 1965.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/nature_of_christian_worship.pdf",
+    "estimatedReadingMinutes": 24
+  },
+  {
+    "id": "life-of-st-basil",
+    "title": "The Life of St. Basil the Great",
+    "author": {
+      "id": "gregory-of-nyssa",
+      "name": "St. Gregory of Nyssa",
+      "bio": "One of the Cappadocian Fathers and brother of St. Basil.",
+      "era": "4th Century"
+    },
+    "type": "Book",
+    "category": "Patristics",
+    "shortDescription": "An intimate encomium and theological biography honoring the monastic wisdom, pastoral heroism, and doctrinal steadfastness of St. Basil.",
+    "publicationInfo": "Patrologia Graeca, Vol. 46, trans. W. Moore, Oxford.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/life_of_st_basil.pdf",
+    "estimatedReadingMinutes": 45
+  },
+  {
+    "id": "early-church-fathers",
+    "title": "The Early Fathers on Unity",
+    "author": {
+      "id": "georges-florovsky",
+      "name": "Georges Florovsky",
+      "bio": "Pioneering theologian of the Neopatristic synthesis.",
+      "era": "20th Century"
+    },
+    "type": "Paper",
+    "category": "Church History",
+    "shortDescription": "An examination of the apostolic ecclesiology of St. Ignatius of Antioch and St. Irenaeus of Lyons amidst early schisms.",
+    "publicationInfo": "Collected Works of Georges Florovsky, Vol. 3, Nordland Publishing.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/early_fathers_unity.pdf",
+    "estimatedReadingMinutes": 30
+  },
+  {
+    "id": "scripture-and-tradition",
+    "title": "Scripture and the Living Tradition",
+    "author": {
+      "id": "john-meyendorff",
+      "name": "John Meyendorff",
+      "bio": "Patristic scholar and historian of Byzantine Christianity.",
+      "era": "20th Century"
+    },
+    "type": "Essay",
+    "category": "Scripture",
+    "shortDescription": "How the Church Fathers read the Scriptures: not as an isolated dead text, but within the Eucharistic life of the Holy Spirit.",
+    "publicationInfo": "Living Tradition: Orthodox Witness in the Contemporary World, SVS Press.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/scripture_and_tradition.pdf",
+    "estimatedReadingMinutes": 18
+  },
+  {
+    "id": "hesychasm-contemplation",
+    "title": "Hesychasm and the Inner Kingdom",
+    "author": {
+      "id": "kallistos-ware",
+      "name": "Metropolitan Kallistos Ware",
+      "bio": "Oxford theologian and leading voice on the Philokalia and Christian asceticism.",
+      "era": "20th/21st Century"
+    },
+    "type": "Lecture",
+    "category": "Christian Life",
+    "shortDescription": "The practice of silence, watchfulness (nepsis), and the Jesus Prayer as an inward pathway to divine communion.",
+    "publicationInfo": "Delivered as the Fr. Georges Florovsky Lecture, Princeton, 1996.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/hesychasm_inner_kingdom.pdf",
+    "estimatedReadingMinutes": 22
+  },
+  {
+    "id": "patristic-doctrine-creation",
+    "title": "Creatio Ex Nihilo and Cosmic Order",
+    "author": {
+      "id": "jaroslav-pelikan",
+      "name": "Jaroslav Pelikan",
+      "bio": "Sterling Professor of History at Yale University and master of Christian tradition.",
+      "era": "20th Century"
+    },
+    "type": "Study",
+    "category": "Research",
+    "shortDescription": "A critical historical investigation into how 2nd-century apologetic theology established the absolute ontological freedom of God.",
+    "publicationInfo": "The Christian Tradition: A History of the Development of Doctrine, Vol. 1, Univ. of Chicago Press.",
+    "sourceUrl": "https://raw.githubusercontent.com/getasew/papers-content/main/content/source/creatio_ex_nihilo.pdf",
+    "estimatedReadingMinutes": 35
+  }
+]
