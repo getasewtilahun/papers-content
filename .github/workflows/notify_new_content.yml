@@ -1,0 +1,91 @@
+name: Notify Users of New Content
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'catalog.json'
+      - '*.json'
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Authenticate with Google / Firebase
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          token_format: 'access_token'
+
+      - name: Detect Changed Work and Send Push Notification
+        env:
+          ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          PROJECT_ID: 'papers-8a20c'
+        run: |
+          python3 -c "
+          import os, json, subprocess, urllib.request
+
+          try:
+              changed_files = subprocess.check_output(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD']).decode().split()
+          except Exception:
+              changed_files = [f for f in os.listdir('.') if f.endswith('.json') and f != 'catalog.json']
+
+          json_files = [f for f in changed_files if f.endswith('.json') and f != 'catalog.json']
+
+          if not json_files:
+              print('No article/book json files modified.')
+              exit(0)
+
+          target_file = json_files[0]
+          work_id = os.path.splitext(target_file)[0]
+
+          with open(target_file, 'r', encoding='utf-8') as f:
+              data = json.load(f)
+
+          title = data.get('title', 'New Theological Work')
+          author = data.get('author', {}).get('name', '')
+          body = f'«{title}»' + (f' by {author}' if author else '') + ' is now available to read in Papers.'
+
+          print(f'Sending push notification for: {title} ({work_id})')
+
+          payload = {
+              'message': {
+                  'topic': 'new_content',
+                  'notification': {
+                      'title': 'New Theological Work Added',
+                      'body': body
+                  },
+                  'data': {
+                      'workId': work_id
+                  }
+              }
+          }
+
+          url = f'https://fcm.googleapis.com/v1/projects/{os.environ[\"PROJECT_ID\"]}/messages:send'
+          req = urllib.request.Request(
+              url,
+              data=json.dumps(payload).encode('utf-8'),
+              headers={
+                  'Authorization': f'Bearer {os.environ[\"ACCESS_TOKEN\"]}',
+                  'Content-Type': 'application/json; UTF-8'
+              },
+              method='POST'
+          )
+
+          try:
+              with urllib.request.urlopen(req) as response:
+                  print('FCM Response:', response.read().decode())
+          except urllib.error.HTTPError as e:
+              print('FCM Send Error:', e.read().decode())
+              raise e
+          "
