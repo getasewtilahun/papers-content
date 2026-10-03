@@ -20,72 +20,65 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Authenticate with Google / Firebase
-        id: auth
-        uses: google-github-actions/auth@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          token_format: 'access_token'
+          node-version: '20'
 
-      - name: Detect Changed Work and Send Push Notification
+      - name: Install Firebase Admin
+        run: npm install firebase-admin --no-package-lock
+
+      - name: Send Notification via Firebase Admin SDK
         env:
-          ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
-          PROJECT_ID: 'papers-8a20c'
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: |
-          python3 -c "
-          import os, json, subprocess, urllib.request
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+          const { execSync } = require("child_process");
+          const admin = require("firebase-admin");
 
-          try:
-              changed_files = subprocess.check_output(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD']).decode().split()
-          except Exception:
-              changed_files = [f for f in os.listdir('.') if f.endswith('.json') and f != 'catalog.json']
-
-          json_files = [f for f in changed_files if f.endswith('.json') and f != 'catalog.json']
-
-          if not json_files:
-              print('No article/book json files modified.')
-              exit(0)
-
-          target_file = json_files[0]
-          work_id = os.path.splitext(target_file)[0]
-
-          with open(target_file, 'r', encoding='utf-8') as f:
-              data = json.load(f)
-
-          title = data.get('title', 'New Theological Work')
-          author = data.get('author', {}).get('name', '')
-          body = f'«{title}»' + (f' by {author}' if author else '') + ' is now available to read in Papers.'
-
-          print(f'Sending push notification for: {title} ({work_id})')
-
-          payload = {
-              'message': {
-                  'topic': 'new_content',
-                  'notification': {
-                      'title': 'New Theological Work Added',
-                      'body': body
-                  },
-                  'data': {
-                      'workId': work_id
-                  }
-              }
+          let changedFiles = [];
+          try {
+            changedFiles = execSync("git diff --name-only HEAD~1 HEAD").toString().split("\n");
+          } catch (e) {
+            changedFiles = fs.readdirSync(".").filter(f => f.endsWith(".json"));
           }
 
-          url = f'https://fcm.googleapis.com/v1/projects/{os.environ[\"PROJECT_ID\"]}/messages:send'
-          req = urllib.request.Request(
-              url,
-              data=json.dumps(payload).encode('utf-8'),
-              headers={
-                  'Authorization': f'Bearer {os.environ[\"ACCESS_TOKEN\"]}',
-                  'Content-Type': 'application/json; UTF-8'
-              },
-              method='POST'
-          )
+          const jsonFiles = changedFiles.map(f => f.trim()).filter(f => f.endsWith(".json") && f !== "catalog.json" && fs.existsSync(f));
 
-          try:
-              with urllib.request.urlopen(req) as response:
-                  print('FCM Response:', response.read().decode())
-          except urllib.error.HTTPError as e:
-              print('FCM Send Error:', e.read().decode())
-              raise e
-          "
+          const targetFile = jsonFiles.length > 0 ? jsonFiles[0] : "on-the-incarnation.json";
+          const workId = path.parse(targetFile).name;
+          const data = JSON.parse(fs.readFileSync(targetFile, "utf8"));
+
+          const title = data.title || "New Theological Work";
+          const author = data.author ? data.author.name : "";
+          const body = author 
+            ? `«${title}» by ${author} is now available in Papers.`
+            : `«${title}» is now available in Papers.`;
+
+          console.log(`Sending push notification for ${title} (${workId})...`);
+
+          const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+          admin.initializeApp({
+            credential: admin.credential.cert(serviceAccount)
+          });
+
+          admin.messaging().send({
+            topic: "new_content",
+            notification: {
+              title: "New Publication Available",
+              body: body
+            },
+            data: {
+              workId: workId
+            }
+          })
+          .then((response) => {
+            console.log("Successfully sent notification:", response);
+          })
+          .catch((error) => {
+            console.error("Error sending notification:", error);
+            process.exit(1);
+          });
+          '
