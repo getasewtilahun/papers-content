@@ -1,0 +1,63 @@
+{
+  "id": "on-the-incarnation",
+  "title": "On the Incarnation of the Word",
+  "author": {
+    "id": "athanasius-of-alexandria",
+    "name": "St. Athanasius of Alexandria",
+    "bio": "Patriarch of Alexandria, champion of the Council of Nicaea, and renowned Doctor of the Church.",
+    "era": "4th Century"
+  },
+  "type": "Treatise",
+  "category": "Patristics",
+  "shortDescription": "The classic theological masterpiece exploring the divine condescension, redemption from death, and the restoration of humanity.",
+  "publicationInfo": "De Incarnatione Verbi Dei, St. Athanasius of Alexandria.",
+  "estimatedReadingMinutes": 25,
+  "chapters": [
+    {
+      "id": "chap-1",
+      "number": 1,
+      "title": "Creation and the Fall",
+      "sections": [
+        {
+          "id": "sec-1-1",
+          "title": "The Divine Dilemma",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "In the beginning, God made the universe out of nothing by His own Word, our Lord Jesus Christ. Humanity was given the supreme grace of being fashioned in the divine image, capable of enjoying communion with the true Life."
+            },
+            {
+              "type": "blockquote",
+              "text": "“For God not only made us out of nothing; but he gave us freely, by the Grace of the Word, a life in correspondence with God.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yet when man turned aside from contemplation of eternal things, corruption took hold of human nature, and death reigned. It was unfitting that what had once partaken of the Word should perish and turn back into non-existence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chap-2",
+      "number": 2,
+      "title": "The Manifestation of the Word",
+      "sections": [
+        {
+          "id": "sec-2-1",
+          "title": "Restoration through the Living Image",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "What then was God to do? Renewal could come from none other than the Word Himself, who had fashioned everything at the beginning. Just as a portrait whose colors have faded through dirt can only be restored when the original model sits again, so the image of God in man could only be renewed by the Archetype."
+            },
+            {
+              "type": "blockquote",
+              "text": "“He became human that we might become divine; he revealed himself through a body that we might receive an idea of the invisible Father.”"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

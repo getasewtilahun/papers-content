@@ -1,5 +1,20 @@
 [
   {
+    "id": "on-the-incarnation",
+    "title": "On the Incarnation of the Word",
+    "author": {
+      "id": "athanasius-of-alexandria",
+      "name": "St. Athanasius of Alexandria",
+      "bio": "Patriarch of Alexandria, champion of the Council of Nicaea, and renowned Doctor of the Church.",
+      "era": "4th Century"
+    },
+    "type": "Treatise",
+    "category": "Patristics",
+    "shortDescription": "The classic theological masterpiece exploring the divine condescension, redemption from death, and the restoration of humanity.",
+    "publicationInfo": "De Incarnatione Verbi Dei, St. Athanasius of Alexandria.",
+    "estimatedReadingMinutes": 25
+  },
+  {
     "id": "nature-of-christian-worship",
     "title": "The Nature of Christian Worship",
     "author": {
