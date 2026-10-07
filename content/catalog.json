@@ -1,5 +1,35 @@
 [
   {
+    "id": "problem-of-human-suffering-job-en",
+    "title": "The Problem of Human Suffering in the Book of Job: An Orthodox Theological Interpretation",
+    "author": {
+      "id": "getasew-tilahun",
+      "name": "Getasew Tilahun",
+      "bio": "Theological researcher specializing in Biblical Theology and Orthodox Hermeneutics.",
+      "era": "Contemporary"
+    },
+    "type": "Research Paper",
+    "category": "Theology",
+    "shortDescription": "A systematic investigation into innocent human suffering in the Book of Job through Eastern and Oriental Orthodox patristic hermeneutics.",
+    "publicationInfo": "Academic Research Paper, Research Methodology under Abba Hailegebriel Girma (PhD, EdD), 2024.",
+    "estimatedReadingMinutes": 22
+  },
+  {
+    "id": "problem-of-human-suffering-job-am",
+    "title": "በመጽሐፈ ኢዮብ ውስጥ የሰው ልጅ መከራ ችግር፡ የኦርቶዶክሳዊ ሥነ-መለኮት ትንታኔ",
+    "author": {
+      "id": "getasew-tilahun",
+      "name": "ጌታሰው ጥላሁን (Getasew Tilahun)",
+      "bio": "በመጽሐፍ ቅዱስ ሥነ-መለኮትና በአበው አስተምህሮ ላይ የሚያተኩር የሥነ-መለኮት ተመራማሪ።",
+      "era": "ዘመናዊ (Contemporary)"
+    },
+    "type": "የምርምር ጽሑፍ",
+    "category": "Theology",
+    "shortDescription": "በመጽሐፈ ኢዮብ ውስጥ የተገለጠውን የንጹሐን መከራ ችግር በኦርቶዶክሳዊት ቤተ ክርስቲያን ሥነ-መለኮትና የአበው ትርጓሜ መነጽር የሚመረምር አካዳሚያዊ ጥናት።",
+    "publicationInfo": "የምርምር ስነ-ዘዴ ጥናት ጽሑፍ (መምህር፡ አባ ኃይለ ገብርኤል ግርማ (ዶ/ር))፣ 2016/2024 ዓ.ም.",
+    "estimatedReadingMinutes": 22
+  },
+  {
     "id": "nature-of-christian-worship",
     "title": "The Nature of Christian Worship",
     "author": {
